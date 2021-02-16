@@ -1,0 +1,26 @@
+#include "/home/fag/.cache/wal/colors.Xresources"
+
+!URxvt.intensityStyles:	false
+!URxvt.depth:		32
+URxvt.font: 		xft:Inconsolata NF:style=Medium:size=14
+URxvt.scrollBar:	false
+!URxvt.cursorColor:	white
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select,selection-to-clipboard
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	Control-k
+URxvt.resize-font.bigger:	Control-l
+!! Matcher
+URxvt.url-launcher:	linkhandler
+URxvt.matcher.button:	1
+!! Shortcuts
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
